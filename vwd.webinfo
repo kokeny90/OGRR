@@ -3,5 +3,6 @@
   Visual Studio global web project settings.
 -->
 <VisualWebDeveloper>
+
   <iisExpressSettings windowsAuthentication="enabled" anonymousAuthentication="enabled" useClassicPipelineMode="false"/>
 </VisualWebDeveloper>
