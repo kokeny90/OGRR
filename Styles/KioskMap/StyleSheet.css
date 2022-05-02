@@ -1,0 +1,294 @@
+﻿body 
+{
+   font-family:'Century Gothic';
+    background-color: #e9e9e9;
+}
+
+#vonalkod
+{
+    background-color: #e9e9e9;
+}
+
+#wrapper
+{
+    /*width: 70%;*/
+    width: 2236px;
+    height: 2208px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid #dedede;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    align: center;
+    z-index:0;
+}
+
+#wrapper2
+{
+    /*width: 70%;*/
+    width: 455px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid #dedede;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    align: center;
+}
+
+#banner {
+    height: 60px;
+    border: 0px solid #E3E3E3;
+    background-color: white;
+    width:1450px
+ 
+    /*background-color: #003264;*/
+    /*background-image: url(../Images/BoschLogo.png);
+    background-position: right;
+    background-repeat: no-repeat;*/
+}
+
+#login
+{
+    background-color: #000080;
+}
+
+#content_area
+{
+    float: left;
+    width: auto;
+    /*width: 1175px;*/
+    margin: 20px 0 20px 0;
+    padding: 2px;
+    border: 3px solid #E3E3E3;
+    background-color: #EAEAEA;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+#content_area2
+{
+    float: left;
+    width: 98%;
+    /*width: 1175px;*/
+    margin: 20px 0 20px 0;
+    padding: 2px;
+    border: 3px solid #E3E3E3;
+    background-color: #EAEAEA;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+}
+/*#sidebar
+{
+    float: right;
+    width: 250px;
+    width: 0px;
+    height: 400px;
+    margin: 20px 10px 20px 10px;
+    padding: 10px;
+    border: 3px solid #E3E3E3;
+}*/
+
+#footer
+{
+    clear: both;
+    width: 960px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #42705B; /*#003264*/   /*#B4C6D9*/
+    text-align: center;
+    font-family:'Century Gothic';
+    font-size: small; 
+    color: #FFFFFF;
+    border: 3px solid #E3E3E3;
+    vertical-align: middle;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+#cssmenu ul {
+  margin: 0;
+  padding: 0;
+  z-index:9999;
+}
+#cssmenu li {
+  margin: 0;
+  padding: 0;
+    z-index:9999;
+}
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+    z-index:9999;
+}
+#cssmenu ul {
+  list-style: none;
+  z-index:9999;
+}
+#cssmenu a {
+  text-decoration: none;
+    z-index:9999;
+}
+#cssmenu {
+
+  background-color: #E2E8EE;
+
+  /*box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);*/
+
+
+    z-index:9999;
+}
+
+#cssmenu > ul > li {
+  float: left;
+  margin-left: 15px;
+  position: relative;
+}
+#cssmenu > ul > li > a {
+  /*color: #a0a0a0;*/
+  color: #000000;
+  font-family:'Century Gothic';
+  font-size: 15px;
+  line-height: 40px;
+  padding: 15px 20px;
+  -webkit-transition: color .15s;
+  -moz-transition: color .15s;
+  -o-transition: color .15s;
+  transition: color .15s;
+}
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+/* a legrdülő menü 1. szintjét kezeli*/
+#cssmenu > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  padding: 16px 0 20px 0;
+  /*background-color: #295D89;*/
+  text-align: left;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  margin-left: -90px;
+  width: 180px;
+  -webkit-transition: all .3s .1s;
+  -moz-transition: all .3s .1s;
+  -o-transition: all .3s .1s;
+  transition: all .3s .1s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+#cssmenu > ul > li:hover > ul {
+  opacity: 1;
+  top: 55px;
+  visibility: visible;
+}
+
+/* a nyilat színezi*/
+#cssmenu > ul > li > ul:before {
+  content: '';
+  display: block;
+  border-color: transparent transparent #000000 transparent;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+#cssmenu > ul > li > ul > li > ul:before {
+  content: '';
+  display: block;
+  border-color: transparent #000000 transparent  transparent;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  margin-left: -10px;
+}
+
+/*legördülő menü 1. szintjét kezeli*/
+#cssmenu > ul ul > li {
+  position: relative;
+  
+}
+
+#cssmenu ul ul
+{
+    background-color: #C7CFDC;
+    top: -30px;
+}
+
+#cssmenu ul ul a {
+  /*color: #323232;*/
+  color: #000000;
+  font-family:'Century Gothic';
+  font-size: 13px;
+  /*background-color: #fafafa;*/
+  /*background-color: #C7CFDC;*/
+  padding: 5px 8px 7px 16px;
+  display: block;
+  -webkit-transition: background-color 0.1s;
+  -moz-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+  
+}
+#cssmenu ul ul a:hover {
+  background-color: #f0f0f0;
+  
+}
+
+/*a kettes szintű kinyílóért felel*/
+#cssmenu ul ul ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -16px;
+  left: 206px;
+  padding: 16px 0 20px 0;
+  /*background-color: #fafafa;*/
+  background-color: #C7CFDC;
+  text-align: left;
+  width: 180px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+#cssmenu ul ul > li:hover > ul {
+  opacity: 1;
+  left: 190px;
+  visibility: visible;
+}
+#cssmenu ul ul a:hover {
+  background-color: #141313;
+  color: #f0f0f0;
+}
+
+.ex1
+{
+    color:White;
+    text-decoration:none;    
+}
+
+.ex1:hover
+{
+    color:red; 
+}
+
+.kep:hover
+{
+    background-color:Gray;
+}

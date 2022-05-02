@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%--<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%--<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>--%>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Kamionkezelő</title>
+    <link href="~/Styles/Site.css?v=<?=time();?>" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="~/Styles/KioskMap/StyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="~/Styles/KioskMap/MyStyle.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="scripts/tinymce/tinymce.js"></script>
+    <script>tinymce.init({ selector: 'textarea', theme: 'modern', });</script>
+
+
+
+    <style type="text/css">
+        .auto-style1 {
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+    </style>
+
+
+
+</head>
+<body id="MasterBody" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <table style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; padding: 0px; border-spacing: 0; vertical-align: top; text-align: left;">
+            <tr style="border-bottom: 4px solid black; padding: 0px; height: 5%; font-size: 55px; background-color: #FFFFFF;">
+                <td style="border-bottom: 4px solid black; text-align: left; font-size: large; font-weight: normal; font-style: normal;">
+                    <div id="banner" style="text-align: right  ;width: 100%;">
+                        <asp:Image Style="margin: 5px 15px 5px 15px" ID="Image1" runat="server" ImageUrl="~/Images/1cb2f2dcdb55030032009414db961934.iix.png" Height="46" Width="153" ImageAlign="Left" />
+                        <strong>
+                            <asp:Label ID="Label1" runat="server" Text="Online Gépjármű Regisztrációs Rendszer" CssClass="mesterfejresz" Font-Names="Titillium Web" Font-Size="19pt"></asp:Label>
+                        </strong>&nbsp; 
+                    </div>
+
+                </td>
+                <td style="text-align: right; border-bottom: 4px solid black; font-size: large; font-weight: normal; font-style: normal;">
+                    <div id="cssmenu">
+                        <ul >
+                            <li class='has-sub'>
+                                <asp:HyperLink ID="HyperLink1" runat="server">
+                                    <%= Resources.Resource.welcome  + ": " + System.Web.HttpContext.Current.User.Identity.Name %>&nbsp;
+                              <%--      <asp:LoginName ID="LoginName1" runat="server" />
+                                    --%>
+                                </asp:HyperLink>
+                                <ul>
+                                    <li class='has-sub'>
+                                        <asp:LoginStatus ID="LoginStatus2" runat="server" />
+                                    </li>
+                                    <li class='has-sub'>Home
+                                    </li>
+
+
+
+                                </ul>
+                            </li>
+                            <li class='has-sub'>
+                                <asp:HyperLink ID="HyperLink5" runat="server">
+                                    <%="Nyelv: " + Resources.Resource.lng  %>
+                                </asp:HyperLink>
+                                <ul>
+                                    <a >
+                                        <li class='has-sub'>
+                                            <asp:ImageButton ID="ImageButtonHU" Visible="true" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="12px" ImageUrl="~/Images/Flag_of_Hungary.svg.png" OnClick="ImageButtonHU_Click" Width="25px" CausesValidation="false" AlternateText="Magyar" ToolTip="Magyar" />
+                                            Magyar</li>
+                                    </a>
+                                    <a  >
+                                        <li class='has-sub'  >
+                                            <asp:ImageButton  OnClick="ImageButtonEN_Click" ID="ImageButtonEN" Visible="true" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="12px" ImageUrl="~/Images/Union_flag_1606_(Kings_Colors).svg.png"  Width="25px" CausesValidation="false" AlternateText="English" ToolTip="English" />
+                                            English</li>
+                                    </a>
+                                    <a >
+                                        <li class='has-sub'>
+                                            <asp:ImageButton ID="ImageButtonDE" Visible="true" runat="server" BorderStyle="Solid" BorderWidth="1px" Height="12px" ImageUrl="~/Images/1280px-Flag_of_Germany.svg.png" OnClick="ImageButtonDE_Click" Width="25px" CausesValidation="false" AlternateText="Deutsche" ToolTip="Deutsche" />
+                                            Deutsche</li>
+                                    </a>
+
+
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                </td>
+            </tr>
+
+
+            <tr style="padding: 0px 0px 0px 15px; width: 10px; height: 10px;">
+                <td colspan="2" style="padding: 0px 0px 0px 15px; margin: 0px; right: 0; top: 0; border-spacing: 0; vertical-align: top;">
+                    <div runat="server" id="manu2" style="padding: 0px; border-spacing: 0" class="auto-style1">
+             <%--           <asp:Menu ID="menu" Orientation="Horizontal" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#666666" StaticSubMenuIndent="10px">
+                            <DynamicHoverStyle BackColor="#666666" ForeColor="White"></DynamicHoverStyle>
+
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"></DynamicMenuItemStyle>
+
+                            <DynamicMenuStyle BackColor="#E3EAEB"></DynamicMenuStyle>
+
+                            <DynamicSelectedStyle BackColor="#1C5E55"></DynamicSelectedStyle>
+
+                            <StaticHoverStyle BackColor="#666666" ForeColor="White"></StaticHoverStyle>
+
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px"></StaticMenuItemStyle>
+
+                            <StaticSelectedStyle BackColor="#1C5E55"></StaticSelectedStyle>
+                        </asp:Menu>--%>
+                        <asp:Menu ID="menu" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#666666" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#E3EAEB" />
+                            <DynamicSelectedStyle BackColor="#1C5E55" />
+                            <Items>
+                                <asp:MenuItem Text="SGHU Order:" Value="SGHU Order">
+                                    <asp:MenuItem NavigateUrl="~/Form_Kereses.aspx" Text="Search" Value="New"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/order.aspx" Text="Own Form" Value="Own Form"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Kamionkezelő" Value="Kamionkezelő">
+                                    <asp:MenuItem NavigateUrl="~/OnlineGepjarmuRegisztraciosRendszer.aspx" Text="Adatok Felvétele" Value="Adatok Felvétele"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/KamionKezelo/MRTable.aspx" Text="Milkrun" Value="Milkrun"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Háttértáblák" Value="Háttértáblák">
+                                    <asp:MenuItem NavigateUrl="~/LSP.aspx" Text="LSP" Value="LSP"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/ProfitCenter.aspx" Text="Profit Center" Value="Profit Center"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Szállítási Megbízás" Value="Szállítási Megbízás">
+                                    <asp:MenuItem NavigateUrl="~/Delivery_Commission/new2.aspx" Text="Új szállítási megbízás rögzítése" Value="Új szállítási megbízás rögzítése"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#1C5E55" />
+                            <StaticItemTemplate>
+                                <%# Eval("Text") %>
+                            </StaticItemTemplate>
+                        </asp:Menu>
+                    </div>
+
+                </td>
+            </tr>
+
+            <tr style="padding-left: 15px" class="content">
+                <td colspan="2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+            </tr>
+            <tr class="footer">
+                <td colspan="2" style="position: absolute; bottom: -10px">
+                    <footer class="footer">
+                        <div class="tooltip">
+                            Készítette: Kökény József                      
+                            <span class="tooltiptext">Probléma esetén kérjük kattints a lenti e-mail címre.</span>
+                        </div>
+                        <p class="keszitette"><a href="mailto:external.Jozsef.Kokeny@SEG-automotive.com?Subject=Online Gépjármű Regisztrációs Rendszer" target="_top">&#9993: FIXED-TERM Kokeny Jozsef (SGHU/LOG51)</a></p>
+                        <p class="keszitette"><a href="tel:+36706843710">&#128241: +36(70)684-3710</a></p>
+                    </footer>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

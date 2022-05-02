@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="BasePage">
+    <Position X="11" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BasePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileSystemItemCS">
+    <Position X="13" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAYAAAgIAAAAAAAAQABAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>App_Code\CSharp\FileSystemItemCS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Functions">
+    <Position X="16.25" Y="3" Width="3" />
+    <TypeIdentifier>
+      <HashCode>QAAQBAAICAAAAAAAAAAAAAIAAAACAFAABCAAAJAAAAA=</HashCode>
+      <FileName>App_Code\Functions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FunctionTest">
+    <Position X="13.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAA=</HashCode>
+      <FileName>App_Code\Test\FunctionTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SGHUORDER.CustomControls.Files">
+    <Position X="11" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAQAAEAAAAAAAAAAABgAAAAYAAAAAAAAA=</HashCode>
+      <FileName>App_Code\Files.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tawammar.CustomControls.Filter">
+    <Position X="17.25" Y="7.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAABAAAIAAAAAAAAAAAFAAAIBAAA=</HashCode>
+      <FileName>App_Code\Filter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="13.25" Y="6.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

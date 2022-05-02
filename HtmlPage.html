@@ -1,0 +1,28 @@
+﻿<head>
+    <script type="text/javascript">
+        function OpenWindow() {
+            var childWin = window.open("about:blank", "MyWindow", "height=150,width=200");
+            childWin.document.body.innerHTML = "<span style='color:red'>Hello World!</span>";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="OpenWindow ();">Open a new window</button>
+</body>
+
+<form id="form1" runat="server">
+
+    <div>
+
+        <a href="javascript:OpenWindow()">Click</a>
+
+    </div>
+    <!--<a href="callto://+36706843710">Link will initiate Skype to call my number!</a>-->
+    <a href="tel:+36206206834">&#128241:+3620620683</a>
+    &#9993;
+    <!--<a href="skype:-skype-name-?chat">Start chat</a>-->
+</form>
+
+</body>
+
+</html>

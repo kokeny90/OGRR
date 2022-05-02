@@ -1,0 +1,1871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="1371c150-656d-431f-966a-a05df192a090"
+  name="Fuvarszervezo" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="68ac831e-f5c6-44e7-9db2-816c79b7c512"
+        name="Fuvarszervező"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2d2cfa9b-11dd-4782-bcbb-0ab4de54df9f"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Regisztráció"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="27b6a822-8e0c-4bf5-bd3b-618c0c25f4b7"
+              LastKnownName="Regisztráció"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51f2fd46-7214-41da-870b-b92d01a0d254"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e6ea25c2-81bc-49d7-a65f-94a5d933e69f"
+                  name="Regisztráció"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2452a0fb-c34b-4f0f-bb6e-148e4fc63656"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Fuvarok Létrehozás"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ffa95cb2-b069-49e6-8431-f945dfb50319"
+              LastKnownName="Fuvarok Létrehozás"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="515c866e-fec7-4dcd-83ea-46942840b4f3"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="deadb147-66db-46c1-b3ef-b2a082ba86e6"
+                  name="Fuvarok Létrehozás"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e5e93ff4-1e22-4759-a510-0290efca9027"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Adatok kezelése"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c5a2bb1b-a881-4fe3-818a-8d34a7b17d4c"
+              LastKnownName="Adatok kezelése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1b6714a5-a65f-4c50-a122-8c786a799e78"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="30398916-b7bb-4794-9826-cee61b26871e"
+                  name="Adatok kezelése"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c6399acf-bf35-453b-a228-d26a4effba9a"
+        name="Bejelentkezés"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="ce9e38cc-3b23-4b57-8b75-e546ff2ecd88">
+            <useCaseMoniker
+              Id="93686c63-123e-4901-a260-1214819e8fe1"
+              LastKnownName="Felhasználó név&#xD;&#xA;Megadása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="0a7c94ba-b82a-4ad7-9432-ab6c3cd68108">
+            <useCaseMoniker
+              Id="4c216d2b-d3df-494b-aaf8-c1efe851ce7f"
+              LastKnownName="Jelszó&#xD;&#xA;Megadása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ac8fbe15-f465-4043-b153-745791d6597c"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2d7ab401-4806-4e0a-a104-9872d348d1c7"
+        name="Fuvarszervező"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9cb4fbb3-578a-4e99-bade-91ad3bfeebda"
+        name="UseCase2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="93686c63-123e-4901-a260-1214819e8fe1"
+        name="Felhasználó név&#xD;&#xA;Megadása"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4c216d2b-d3df-494b-aaf8-c1efe851ce7f"
+        name="Jelszó&#xD;&#xA;Megadása"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="50f28ad5-732a-472a-83fd-7046144bd357">
+            <useCaseMoniker
+              Id="a8a10c4f-4028-4554-b634-40cbbafe5a71"
+              LastKnownName="Elfelejtett Jelszó Kezelése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="91900d2a-df68-4fee-bd5d-490718ecbdec"
+        name="Felhasználó név&#xD;&#xA;Megadása2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="27b6a822-8e0c-4bf5-bd3b-618c0c25f4b7"
+        name="Regisztráció"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="df0ff020-a95e-464c-b6c2-ecfd470bdacc">
+            <useCaseMoniker
+              Id="456c4a07-dc32-4ea8-a807-ab8b474e48d3"
+              LastKnownName="Felhasználó létrehozása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="13150295-bfb8-419e-86bb-13443b9b24d4">
+            <useCaseMoniker
+              Id="82c4298f-5dee-4da7-ace4-edfa3ee01a1c"
+              LastKnownName="Jelszó&#xD;&#xA;létrehozás"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="456c4a07-dc32-4ea8-a807-ab8b474e48d3"
+        name="Felhasználó létrehozása"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="82c4298f-5dee-4da7-ace4-edfa3ee01a1c"
+        name="Jelszó&#xD;&#xA;létrehozás"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="914dccdc-0fde-4916-8268-b59dcd9eeb94"
+        name="Felhasználó név&#xD;&#xA;Megadása3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="68b2f061-dd23-40a3-852e-de94ea74319f"
+        name="Jelszó&#xD;&#xA;Megadása2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ffa95cb2-b069-49e6-8431-f945dfb50319"
+        name="Fuvarok Létrehozás"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="bde6be08-0c1a-496b-980f-c58f9c939f7d">
+            <useCaseMoniker
+              Id="c6399acf-bf35-453b-a228-d26a4effba9a"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c5a2bb1b-a881-4fe3-818a-8d34a7b17d4c"
+        name="Adatok kezelése"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="93d0a6d7-36e9-442d-8cda-f15b25c14d17">
+            <useCaseMoniker
+              Id="c6399acf-bf35-453b-a228-d26a4effba9a"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a8a10c4f-4028-4554-b634-40cbbafe5a71"
+        name="Elfelejtett Jelszó Kezelése"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c7eff3e-cb24-483e-97c8-362a08c40636"
+        name="Riportok Készítése"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="41c9cf2b-03e4-490e-aa71-b7c6b586f353">
+            <useCaseMoniker
+              Id="c6399acf-bf35-453b-a228-d26a4effba9a"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="2abae699-f24f-405f-ac34-70c7f782de99"
+        name="Adminisztrátor"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="627e8818-bd72-4f22-8054-cd10afb04795"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Regisztráció"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b27b0596-c1fd-4866-9ef0-e768faedeaae"
+              LastKnownName="Regisztráció"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="882010b6-33a4-40d8-bd48-73fe3caefc0b"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8e5a4e3c-df0a-4c2a-8215-fbbe3d3b6447"
+                  name="Regisztráció"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9e130bd5-9bc7-444b-bb3f-bfe7f13e4d23"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Fuvarok Létrehozás"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bb3636ee-2be1-4d95-9fa6-bf382c51dd8d"
+              LastKnownName="Fuvarok Létrehozás"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1a9d3f0c-8568-4a14-a58b-a91b0e3f077b"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3708e43a-3ead-4c41-8709-d5c4dfbd46c1"
+                  name="Fuvarok Létrehozás"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ce4efed9-f7b0-4f77-977c-0cf43f3a23c9"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Adatok kezelése"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2866a4c9-7531-4ff2-ae32-25d5f3aafc65"
+              LastKnownName="Adatok kezelése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="472a11e8-27ae-4d71-bbd1-63989cffca24"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0bab7e5-3643-4839-b891-3846e011ac50"
+                  name="Adatok kezelése"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f82455b3-7c13-4656-9f68-df3e25e517a7"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező1"
+            targetEndRoleName="Riportok Készítése1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="51abe664-88e6-4b57-ad34-771b71c74d94"
+              LastKnownName="Riportok Készítése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="75674bc3-a7a0-450e-b3e3-6330b567fabd"
+                  name="Fuvarszervező1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2affdae7-f293-4c7e-bd5b-be08f0bd075b"
+                  name="Riportok Készítése1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bcea1e94-d5ec-4760-931a-e088c7b55e88"
+        name="Bejelentkezés"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="ff2b8294-c92c-4edc-82d7-779d471356a5">
+            <useCaseMoniker
+              Id="90027d92-58ae-48cf-84bc-add4baf2d17f"
+              LastKnownName="Felhasználó név&#xD;&#xA;Megadása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="c9261303-99d2-4290-b0f1-90c3200e50f2">
+            <useCaseMoniker
+              Id="fe612235-2507-432a-97e9-aa5dd3082a43"
+              LastKnownName="Jelszó&#xD;&#xA;Megadása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="90027d92-58ae-48cf-84bc-add4baf2d17f"
+        name="Felhasználó név&#xD;&#xA;Megadása"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fe612235-2507-432a-97e9-aa5dd3082a43"
+        name="Jelszó&#xD;&#xA;Megadása"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="2fc79545-b681-40c4-910b-0d36df0ae030">
+            <useCaseMoniker
+              Id="99bc44ce-7087-4f4d-84d1-0a50f8569df6"
+              LastKnownName="Elfelejtett Jelszó Kezelése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b27b0596-c1fd-4866-9ef0-e768faedeaae"
+        name="Regisztráció"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6730dc11-5038-4c73-830d-a8a83d27d8c8">
+            <useCaseMoniker
+              Id="51221dab-4d0d-458d-adc3-53ce2cfe2fca"
+              LastKnownName="Felhasználó létrehozása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="53ebd651-601c-4fd4-993c-7cdc300fa071">
+            <useCaseMoniker
+              Id="4a770c5e-5c81-4535-80f3-eb314e5fcd33"
+              LastKnownName="Jelszó&#xD;&#xA;létrehozás"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="51221dab-4d0d-458d-adc3-53ce2cfe2fca"
+        name="Felhasználó létrehozása"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4a770c5e-5c81-4535-80f3-eb314e5fcd33"
+        name="Jelszó&#xD;&#xA;létrehozás"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bb3636ee-2be1-4d95-9fa6-bf382c51dd8d"
+        name="Fuvarok Létrehozás"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="78d994ff-184f-48a3-babd-a75ea130f1d5">
+            <useCaseMoniker
+              Id="bcea1e94-d5ec-4760-931a-e088c7b55e88"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2866a4c9-7531-4ff2-ae32-25d5f3aafc65"
+        name="Adatok kezelése"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="cc11f6f7-25bb-4970-a6a3-7fdf0aab7f86">
+            <useCaseMoniker
+              Id="bcea1e94-d5ec-4760-931a-e088c7b55e88"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="99bc44ce-7087-4f4d-84d1-0a50f8569df6"
+        name="Elfelejtett Jelszó Kezelése"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="51abe664-88e6-4b57-ad34-771b71c74d94"
+        name="Riportok Készítése"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="a9ad973b-12dc-4509-a7e2-b987e97fe624">
+            <useCaseMoniker
+              Id="bcea1e94-d5ec-4760-931a-e088c7b55e88"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d3b734cb-e218-4727-9b8e-5645c97bd3ad"
+        name="Bejelentkezés1"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e410c6c4-7a30-467c-ba51-f1761467f9f1">
+            <useCaseMoniker
+              Id="7d3e682e-a14a-4f6a-8d1d-8e82dbb7dddc"
+              LastKnownName="Felhasználó név&#xD;&#xA;Megadása1"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="6baf3c04-c669-4c6b-8e9f-fc36d942c3d5">
+            <useCaseMoniker
+              Id="f307063b-0b3d-49ae-8c02-ec6194563953"
+              LastKnownName="Jelszó&#xD;&#xA;Megadása1"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7d3e682e-a14a-4f6a-8d1d-8e82dbb7dddc"
+        name="Felhasználó név&#xD;&#xA;Megadása1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f307063b-0b3d-49ae-8c02-ec6194563953"
+        name="Jelszó&#xD;&#xA;Megadása1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f07040d1-6d32-4e66-8547-c55a837ba47a"
+        name="Regisztráció1"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="c917ddb4-ba13-46b1-b3b9-217066a95f7e">
+            <useCaseMoniker
+              Id="9ec0c596-9df7-47d2-a0ba-fc6cc77eeced"
+              LastKnownName="Felhasználó létrehozása1"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="fe517abc-e2ce-44e7-a9ab-2fc79ae1b369">
+            <useCaseMoniker
+              Id="f91d147e-881d-42c1-8682-61b75143a20e"
+              LastKnownName="Jelszó&#xD;&#xA;létrehozás1"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9ec0c596-9df7-47d2-a0ba-fc6cc77eeced"
+        name="Felhasználó létrehozása1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f91d147e-881d-42c1-8682-61b75143a20e"
+        name="Jelszó&#xD;&#xA;létrehozás1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fe9a50ec-868b-451e-9dad-6d62458e5bb2"
+        name="Adatok kezelése1"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="d04cb486-3fb8-4f43-b5c0-e252f3aeb781">
+            <useCaseMoniker
+              Id="d3b734cb-e218-4727-9b8e-5645c97bd3ad"
+              LastKnownName="Bejelentkezés1"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="78ada0af-6df6-4bef-a072-4dec92b31a02"
+        name="Riportok Készítése1"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="9e315207-5560-4a06-bdc0-f56a0350070b">
+            <useCaseMoniker
+              Id="d3b734cb-e218-4727-9b8e-5645c97bd3ad"
+              LastKnownName="Bejelentkezés1"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1a8d960a-95f0-430c-9795-24b426e77c0c"
+        name="Adminisztrátor1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3da853bc-7eaf-44d7-a814-af8656ba2dff"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Regisztráció"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f0221dee-382c-4015-8b06-4d7fa7b3488c"
+              LastKnownName="Regisztráció2"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ce1917f6-ede9-401f-850c-d4c2462d7f60"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dda84dba-2254-49ce-9f21-a402fd5eb903"
+                  name="Regisztráció"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3bbba8b1-55f8-495f-904a-9ba285c4c1ff"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Adatok kezelése"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ac998470-9743-4ab9-be2a-b99656cd55d5"
+              LastKnownName="Adatok kezelése2"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58b35750-bda4-427b-93e8-243229f8e20f"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39852f7c-9ff2-4528-8da3-ac45eed8be60"
+                  name="Adatok kezelése"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d4f43cb4-5aab-4d29-ac8c-67b8a1803e97"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező1"
+            targetEndRoleName="Riportok Készítése1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="44c8a62b-6f32-48ae-a377-4521372de68a"
+              LastKnownName="Riportok Készítése2"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0190e264-f2a8-47c7-a9a0-2f5ca7ffb246"
+                  name="Fuvarszervező1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a8509d4-e364-4a7b-9b64-8c54317ff382"
+                  name="Riportok Készítése1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8f7bdb75-60bc-47c9-8542-5a8405a9e1dd"
+        name="Bejelentkezés2"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="76255083-3ebf-4298-b65e-f3b853cc67a0">
+            <useCaseMoniker
+              Id="eb3e7978-3f76-4fa4-b4da-24a379c6ff5d"
+              LastKnownName="Felhasználó név&#xD;&#xA;Megadása4"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="a781fadd-497c-4b25-9e3f-029053cd817e">
+            <useCaseMoniker
+              Id="03d7c7c0-207e-4996-819a-9380fd634093"
+              LastKnownName="Jelszó&#xD;&#xA;Megadása3"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eb3e7978-3f76-4fa4-b4da-24a379c6ff5d"
+        name="Felhasználó név&#xD;&#xA;Megadása4"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="03d7c7c0-207e-4996-819a-9380fd634093"
+        name="Jelszó&#xD;&#xA;Megadása3"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="cb9d786e-4624-4f25-b41d-adf9fcbcbf39">
+            <useCaseMoniker
+              Id="225ce6d1-c7e4-4504-8c2c-c354eb757656"
+              LastKnownName="Elfelejtett Jelszó Kezelése1"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f0221dee-382c-4015-8b06-4d7fa7b3488c"
+        name="Regisztráció2"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="29386443-e5f6-4745-ae53-e875b84db7d9">
+            <useCaseMoniker
+              Id="72b72117-a304-4ffa-bcad-54905bb1aa3a"
+              LastKnownName="Felhasználó létrehozása2"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="ab0a40e2-5e25-4a6d-a9e3-31cfe61d9639">
+            <useCaseMoniker
+              Id="28cad211-2116-4549-865d-73142a388f9c"
+              LastKnownName="Jelszó&#xD;&#xA;létrehozás2"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="72b72117-a304-4ffa-bcad-54905bb1aa3a"
+        name="Felhasználó létrehozása2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="28cad211-2116-4549-865d-73142a388f9c"
+        name="Jelszó&#xD;&#xA;létrehozás2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ac998470-9743-4ab9-be2a-b99656cd55d5"
+        name="Adatok kezelése2"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="99ac6db9-57f4-407d-8f9b-648387898541">
+            <useCaseMoniker
+              Id="8f7bdb75-60bc-47c9-8542-5a8405a9e1dd"
+              LastKnownName="Bejelentkezés2"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="225ce6d1-c7e4-4504-8c2c-c354eb757656"
+        name="Elfelejtett Jelszó Kezelése1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="44c8a62b-6f32-48ae-a377-4521372de68a"
+        name="Riportok Készítése2"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="0a585f89-9e6c-4a34-8a44-71d9c77936f9">
+            <useCaseMoniker
+              Id="8f7bdb75-60bc-47c9-8542-5a8405a9e1dd"
+              LastKnownName="Bejelentkezés2"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="2ccbc383-506f-4959-ba68-f2c1277dcd82"
+        name="Portás"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="51889f5a-0a02-40bb-a4e9-6c5b98d4f36d"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Regisztráció"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="044d61ab-30bf-40c7-b6bc-7c9a85a1565f"
+              LastKnownName="Regisztráció3"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="90a645b7-8a7d-4b3b-ade8-d6259cfbd472"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ae75b12-3b4e-44af-9be8-bf05a4ca40df"
+                  name="Regisztráció"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b14ee384-2bd9-4f02-b1bd-54eb702a35ff"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Adatok kezelése"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d842d470-87a6-4d42-b4d0-41f805272a58"
+              LastKnownName="Adatok Rögzitése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e2f4c17-b250-46b0-85e4-c98b010dcbfd"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c97db3a0-d608-491d-bf65-44980f079be3"
+                  name="Adatok kezelése"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0baecca3-8b4a-4b66-99ee-0142d7c66cff"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező1"
+            targetEndRoleName="Riportok Készítése1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="320270af-52dd-4a08-bb5b-5c5fc3071653"
+              LastKnownName="Riportok Készítése3"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02de1977-f8d1-426d-a417-829b6a23eb60"
+                  name="Fuvarszervező1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e3a424e-d35d-4a55-a7cf-d69987cbe6e0"
+                  name="Riportok Készítése1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="09704a86-802a-4bbe-8dfc-2b106586b299"
+        name="Bejelentkezés3"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1a185e56-ec2c-486e-a737-f785996986ef">
+            <useCaseMoniker
+              Id="29fb9551-be63-4728-b711-198a1026c913"
+              LastKnownName="Felhasználó név&#xD;&#xA;Megadása5"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="6547bcc4-7dcd-4c8c-88a1-cc5eb7011937">
+            <useCaseMoniker
+              Id="87635f79-b418-4423-ab88-e118a438f030"
+              LastKnownName="Jelszó&#xD;&#xA;Megadása4"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="29fb9551-be63-4728-b711-198a1026c913"
+        name="Felhasználó név&#xD;&#xA;Megadása5"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="87635f79-b418-4423-ab88-e118a438f030"
+        name="Jelszó&#xD;&#xA;Megadása4"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="783e80a6-45f8-4dd2-b19a-2a3af8214165">
+            <useCaseMoniker
+              Id="e2bac6ba-3719-440e-bbb4-c0b430c5f176"
+              LastKnownName="Elfelejtett Jelszó Kezelése2"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="044d61ab-30bf-40c7-b6bc-7c9a85a1565f"
+        name="Regisztráció3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d66cd677-304b-4a1a-bc18-f2242b3a76cc"
+        name="Felhasználó létrehozása3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c3548f2b-6826-4727-b67a-baecc39b3227"
+        name="Jelszó&#xD;&#xA;létrehozás3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d842d470-87a6-4d42-b4d0-41f805272a58"
+        name="Adatok Rögzitése"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6235b3b0-ca42-4d44-b54f-0e831895d516">
+            <useCaseMoniker
+              Id="09704a86-802a-4bbe-8dfc-2b106586b299"
+              LastKnownName="Bejelentkezés3"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e2bac6ba-3719-440e-bbb4-c0b430c5f176"
+        name="Elfelejtett Jelszó Kezelése2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="320270af-52dd-4a08-bb5b-5c5fc3071653"
+        name="Riportok Készítése3"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e33dc422-77dc-4d24-a75e-1ef3187a5dc5">
+            <useCaseMoniker
+              Id="09704a86-802a-4bbe-8dfc-2b106586b299"
+              LastKnownName="Bejelentkezés3"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c51d8004-c310-41a4-9c55-ae4963f6c9ca"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="498027d3-7110-4377-b053-27089712fa2b"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Regisztráció"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e8838bb-2f2e-4933-b34a-16cc2ec50b3f"
+              LastKnownName="Regisztráció"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f49fe165-bdc7-4148-9399-ef48f21168c2"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2574cac2-060b-4d80-b7f0-f48786aea664"
+                  name="Regisztráció"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1dfbdddb-480b-4844-ab0c-df2f2d59b84b"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Fuvarok Létrehozás"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="57db754d-b11a-4fcd-83f6-35d85292d0a9"
+              LastKnownName="Fuvarok Létrehozás"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d17fdc2-13a8-4a16-b6ee-123c6b2613bb"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b25e0a6a-8f4f-4f71-9127-78c0dffcd27e"
+                  name="Fuvarok Létrehozás"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9669017d-e426-4f45-b90d-68ab9778bb10"
+            isDerived="false"
+            sourceEndRoleName="Fuvarszervező"
+            targetEndRoleName="Adatok kezelése"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4ce4baeb-90b6-4c6a-90ad-b598d45a276a"
+              LastKnownName="Adatok kezelése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8559758e-4535-4721-8f9b-8208a736c9c7"
+                  name="Fuvarszervező"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5d7402c-a1ae-48d2-8303-4d460fa98eca"
+                  name="Adatok kezelése"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c5f9b759-d9f3-45ce-8668-e75067568f32"
+        name="Bejelentkezés"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="5a9b901b-763a-46f4-89aa-6b560a67719d">
+            <useCaseMoniker
+              Id="c9aad1f7-c96c-4bd1-b186-0a9e263f9dcd"
+              LastKnownName="Felhasználó név&#xD;&#xA;Megadása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="8d312c19-4d8d-41e5-82eb-3ce9bbed97e2">
+            <useCaseMoniker
+              Id="2a97d91c-c891-49b0-a50f-f5c7cd20504a"
+              LastKnownName="Jelszó&#xD;&#xA;Megadása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c9aad1f7-c96c-4bd1-b186-0a9e263f9dcd"
+        name="Felhasználó név&#xD;&#xA;Megadása"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2a97d91c-c891-49b0-a50f-f5c7cd20504a"
+        name="Jelszó&#xD;&#xA;Megadása"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="28bf7d7b-769a-4921-a001-f7035ecda3b1">
+            <useCaseMoniker
+              Id="b818cacf-1aa7-407c-96f7-d255cc692a9f"
+              LastKnownName="Elfelejtett Jelszó Kezelése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e8838bb-2f2e-4933-b34a-16cc2ec50b3f"
+        name="Regisztráció"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="419636a9-2417-405d-8bcd-508889006482">
+            <useCaseMoniker
+              Id="d45e69ff-5701-4078-a3e0-c7d75bb39b2c"
+              LastKnownName="Felhasználó létrehozása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+          <include
+            Id="59721e68-9683-4e38-bf59-561349a26f00">
+            <useCaseMoniker
+              Id="8d1b0029-0ad8-4594-a4d2-2ae785a01d6b"
+              LastKnownName="Jelszó&#xD;&#xA;létrehozás"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d45e69ff-5701-4078-a3e0-c7d75bb39b2c"
+        name="Felhasználó létrehozása"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8d1b0029-0ad8-4594-a4d2-2ae785a01d6b"
+        name="Jelszó&#xD;&#xA;létrehozás"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="57db754d-b11a-4fcd-83f6-35d85292d0a9"
+        name="Fuvarok Létrehozás"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="77bc284a-27ec-4e9d-b569-7c0a4080ca03">
+            <useCaseMoniker
+              Id="c5f9b759-d9f3-45ce-8668-e75067568f32"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4ce4baeb-90b6-4c6a-90ad-b598d45a276a"
+        name="Adatok kezelése"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="ac75e6c4-1616-4208-a741-f51ef40c55b6">
+            <useCaseMoniker
+              Id="c5f9b759-d9f3-45ce-8668-e75067568f32"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b818cacf-1aa7-407c-96f7-d255cc692a9f"
+        name="Elfelejtett Jelszó Kezelése"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f9f52482-aad2-4190-8440-80a22071165b"
+        name="Riportok Készítése"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="232a0fe6-38bd-4a99-b7c2-046f0b09939f">
+            <useCaseMoniker
+              Id="c5f9b759-d9f3-45ce-8668-e75067568f32"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c7110599-51f5-42f7-886e-3b6ece91d5f8"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="95990071-dc04-496e-b019-4521c3a863aa"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Riportok Készítése"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f9f52482-aad2-4190-8440-80a22071165b"
+              LastKnownName="Riportok Készítése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d24c683-e7bb-47d5-be5f-09fb0ffe2241"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0c997e1f-45db-4622-a5b5-a10654269eea"
+                  name="Riportok Készítése"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="317f93ed-66b0-4c3a-8206-4b09e438516c"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Fuvarok Létrehozás"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="57db754d-b11a-4fcd-83f6-35d85292d0a9"
+              LastKnownName="Fuvarok Létrehozás"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a42caae7-013c-460d-b294-3f9812fe847c"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d219db85-bf06-486f-80d1-02399ddadd66"
+                  name="Fuvarok Létrehozás"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="56f35654-7101-4cc0-93fb-177587c7ffda"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Adatok kezelése"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4ce4baeb-90b6-4c6a-90ad-b598d45a276a"
+              LastKnownName="Adatok kezelése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5941c4fe-fa2a-454d-87e8-a62f33c7bcd4"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="042191a0-1250-412d-8136-2ad736bae367"
+                  name="Adatok kezelése"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fa27c478-69a5-4f33-b764-d1d04f965971"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Regisztráció4"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e8838bb-2f2e-4933-b34a-16cc2ec50b3f"
+              LastKnownName="Regisztráció"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1ba76bbf-eae2-416a-b3da-cbdaab857b1a"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c1cd5551-06d2-4e6d-beac-1e94df66b17f"
+                  name="Regisztráció4"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3a1264bc-f98f-4acf-ba8b-07327e33f69d"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Felhasználók kezelése"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="934b026e-f52b-4460-86c3-d5641b6f9441"
+              LastKnownName="Felhasználók kezelése"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="622eb326-e8a7-4cfb-9bdf-7243586a95e0"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2698c240-0776-443c-b2e2-59b43dee7cf1"
+                  name="Felhasználók kezelése"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3e384715-28e3-43eb-8b07-cb517f2d40fa"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Felhasználók kezelése2"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="913fabc8-f9d5-43ae-be12-238d1e8dbcc6"
+              LastKnownName="Adatbázis módosítása"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="69a24fd4-9390-4101-b9ab-8a3c9e80b81c"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c67eece7-bdbf-426f-b78d-88615b733292"
+                  name="Felhasználók kezelése2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5a97f882-3752-40f4-8044-b1f56568ee37"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Felhasználók kezelése1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="172e5d0a-7caf-46e6-9a98-860e3bc8f9dd"
+              LastKnownName="E-mail beállítások"
+              LastKnownLocation="Fuvarszervezo.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1f22aa5-26a7-4282-bfb0-a4be730d44be"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1381f254-02b7-4f46-a23b-a5b5c3e67df1"
+                  name="Felhasználók kezelése1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="934b026e-f52b-4460-86c3-d5641b6f9441"
+        name="Felhasználók kezelése"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6823853e-7d92-4a9e-a237-582a3f4adcc6">
+            <useCaseMoniker
+              Id="c5f9b759-d9f3-45ce-8668-e75067568f32"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="172e5d0a-7caf-46e6-9a98-860e3bc8f9dd"
+        name="E-mail beállítások"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="f8144142-8b38-4e4b-80e3-bb6be7f0344a">
+            <useCaseMoniker
+              Id="c5f9b759-d9f3-45ce-8668-e75067568f32"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="913fabc8-f9d5-43ae-be12-238d1e8dbcc6"
+        name="Adatbázis módosítása"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="a1256b24-2099-484c-849f-6fac442da52a">
+            <useCaseMoniker
+              Id="c5f9b759-d9f3-45ce-8668-e75067568f32"
+              LastKnownName="Bejelentkezés"
+              LastKnownLocation="Fuvarszervezo.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

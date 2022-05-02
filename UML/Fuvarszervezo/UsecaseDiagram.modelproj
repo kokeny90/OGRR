@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22645edd-e291-48ce-ba61-2a86100ec2d8}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>UsecaseDiagram</Name>
+    <RootNamespace>Fuvarszervezo</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Admin.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Admin.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Admin.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Portás.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Portás.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Portás.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="Adminisztrátor.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Adminisztrátor.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Adminisztrátor.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Fuvarszervezo.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Fuvarszervezo.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Fuvarszervezo.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Fuvarszervezo.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
