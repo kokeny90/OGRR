@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -18,81 +19,81 @@ public partial class WebUserControl : System.Web.UI.UserControl
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        string important1 = Global.ImportantData;
-        Button6.Text = "Clear Filter from '" + BEoszlop + "'";
-        Panel1.Visible = false;
-        if (!IsPostBack)
-        {
+        //string important1 = Global.ImportantData;
+        //Button6.Text = "Clear Filter from '" + BEoszlop + "'";
+        //Panel1.Visible = false;
+        //if (!IsPostBack)
+        //{
 
 
-            Global.ImportantData = null;
+        //    Global.ImportantData = null;
 
 
-            //using (SqlConnection conn = new SqlConnection())
-            //{
-            //    conn.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["LocalDatabaseConnectionString"].ConnectionString;
-            //    using (SqlCommand cmd = new SqlCommand())
-            //    {
-            //        cmd.CommandText = "select * FROM [RBHM_LOG-T].[dbo].[tabla] GROUP BY " + myIntValue + " ;";
-            //        cmd.Connection = conn;
-            //        conn.Open();
-            //        using (SqlDataReader sdr = cmd.ExecuteReader())
-            //        {
-            //            int i = 0;
-            //            while (sdr.Read())
-            //            {
+        //    //using (SqlConnection conn = new SqlConnection())
+        //    //{
+        //    //    conn.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["LocalDatabaseConnectionString"].ConnectionString;
+        //    //    using (SqlCommand cmd = new SqlCommand())
+        //    //    {
+        //    //        cmd.CommandText = "select * FROM [RBHM_LOG-T].[dbo].[tabla] GROUP BY " + myIntValue + " ;";
+        //    //        cmd.Connection = conn;
+        //    //        conn.Open();
+        //    //        using (SqlDataReader sdr = cmd.ExecuteReader())
+        //    //        {
+        //    //            int i = 0;
+        //    //            while (sdr.Read())
+        //    //            {
 
-            //                ListItem item = new ListItem();
-            //                item.Text = sdr[intbe].ToString();
-            //                item.Value = i.ToString();
+        //    //                ListItem item = new ListItem();
+        //    //                item.Text = sdr[intbe].ToString();
+        //    //                item.Value = i.ToString();
 
-            //                DropDownList1.Items.Add(item);
-            //                i = i + 1;
-            //            }
-            //        }
-            //        conn.Close();
-            //    }
-            //}
+        //    //                DropDownList1.Items.Add(item);
+        //    //                i = i + 1;
+        //    //            }
+        //    //        }
+        //    //        conn.Close();
+        //    //    }
+        //    //}
 
 
-        }
+        //}
 
-        else if (important1 != null)
-        {
+        //else if (important1 != null)
+        //{
 
-            //string buff = "";
-            //SqlDataSource rp = (SqlDataSource)Page.Master.FindControl("SqlDataSource1");
-            //rp.FilterExpression = important1;
-            //DataSourceSelectArguments args = new DataSourceSelectArguments();
-            //DataView view = (DataView)rp.Select(args);
-            //DataTable dt = view.ToTable();
-            //for (int i = 0; i < dt.Rows.Count; i++)
-            //{
+        //    //string buff = "";
+        //    //SqlDataSource rp = (SqlDataSource)Page.Master.FindControl("SqlDataSource1");
+        //    //rp.FilterExpression = important1;
+        //    //DataSourceSelectArguments args = new DataSourceSelectArguments();
+        //    //DataView view = (DataView)rp.Select(args);
+        //    //DataTable dt = view.ToTable();
+        //    //for (int i = 0; i < dt.Rows.Count; i++)
+        //    //{
 
-            //    Regex regex = new Regex(@"^.*" + dt.Rows[i][myIntValue].ToString() + ".*$");
-            //    Match match = regex.Match(buff);
-            //    if (!match.Success)
-            //    {
-            //        buff = buff + dt.Rows[i][myIntValue].ToString();
-            //        ListItem item = new ListItem();
-            //        item.Text = dt.Rows[i][0].ToString();
-            //        item.Value = dt.Rows[i][0].ToString();
-            //        regex = new Regex(@"^.*" + myIntValue + "<>" + item.Text + ".*$");
-            //        match = regex.Match(important1);
-            //        if (match.Success)
-            //        {
-            //            item.Selected = false;
-            //        }
-            //        else
-            //        {
-            //            item.Selected = true;
-            //        }
+        //    //    Regex regex = new Regex(@"^.*" + dt.Rows[i][myIntValue].ToString() + ".*$");
+        //    //    Match match = regex.Match(buff);
+        //    //    if (!match.Success)
+        //    //    {
+        //    //        buff = buff + dt.Rows[i][myIntValue].ToString();
+        //    //        ListItem item = new ListItem();
+        //    //        item.Text = dt.Rows[i][0].ToString();
+        //    //        item.Value = dt.Rows[i][0].ToString();
+        //    //        regex = new Regex(@"^.*" + myIntValue + "<>" + item.Text + ".*$");
+        //    //        match = regex.Match(important1);
+        //    //        if (match.Success)
+        //    //        {
+        //    //            item.Selected = false;
+        //    //        }
+        //    //        else
+        //    //        {
+        //    //            item.Selected = true;
+        //    //        }
 
-            //        DropDownList1.Items.Add(item);
-            //    }
-            //}
+        //    //        DropDownList1.Items.Add(item);
+        //    //    }
+        //    //}
 
-        }
+        //}
 
     }
     private string BeDROPText;
@@ -336,27 +337,27 @@ public partial class WebUserControl : System.Web.UI.UserControl
         Panel1.Visible = false;
     }
 
-    protected void TextBox1_TextChanged(object sender, EventArgs e)
-    {
-        string important1 = Global.ImportantData;
-        GridView gr = (GridView)Page.Master.FindControl("GridView1");
-        SqlDataSource rp = (SqlDataSource)Page.Master.FindControl("SqlDataSource1");
+    //protected void TextBox1_TextChanged(object sender, EventArgs e)
+    //{
+    //    string important1 = Global.ImportantData;
+    //    GridView gr = (GridView)Page.Master.FindControl("GridView1");
+    //    SqlDataSource rp = (SqlDataSource)Page.Master.FindControl("SqlDataSource1");
 
-        if (important1 != null)
-        {
-            rp.FilterExpression = important1 + " and " + BEoszlop + "<>" + TextBox1.Text;
-        }
-        else
-        {
-            rp.FilterExpression = BEoszlop + " = " + TextBox1.Text;
+    //    if (important1 != null)
+    //    {
+    //        rp.FilterExpression = important1 + " and " + BEoszlop + "<>" + TextBox1.Text;
+    //    }
+    //    else
+    //    {
+    //        rp.FilterExpression = BEoszlop + " = " + TextBox1.Text;
 
-        }
+    //    }
 
-        gr.DataBind();
+    //    gr.DataBind();
 
 
 
-    }
+    //}
     List<string> list = new List<string>();
     public void szuro(GridView gr)
     {
@@ -445,105 +446,105 @@ public partial class WebUserControl : System.Web.UI.UserControl
 
 
     }
-    protected void Button3_Click(object sender, EventArgs e)
-    {
-        GridView gr = (GridView)Page.Master.FindControl("GridView1");
-        SqlDataSource rp = (SqlDataSource)Page.Master.FindControl("SqlDataSource1");
-        int index = 0;
-        int nyeretes = 0;
-        foreach (ListItem item in CheckBoxList1.Items)
-        {
-            if (item.Selected)
-            {
-                nyeretes++;
-            }
+    //protected void Button3_Click(object sender, EventArgs e)
+    //{
+    //    GridView gr = (GridView)Page.Master.FindControl("GridView1");
+    //    SqlDataSource rp = (SqlDataSource)Page.Master.FindControl("SqlDataSource1");
+    //    int index = 0;
+    //    int nyeretes = 0;
+    //    foreach (ListItem item in CheckBoxList1.Items)
+    //    {
+    //        if (item.Selected)
+    //        {
+    //            nyeretes++;
+    //        }
 
-        }
-        if (nyeretes > (CheckBoxList1.Items.Count - nyeretes))
-        {
+    //    }
+    //    if (nyeretes > (CheckBoxList1.Items.Count - nyeretes))
+    //    {
 
-        }
+    //    }
 
-        foreach (ListItem item in CheckBoxList1.Items)
-        {
-            string columnValues = System.Net.WebUtility.HtmlDecode(item.Text);
-            string important1 = Global.ImportantData;
+    //    foreach (ListItem item in CheckBoxList1.Items)
+    //    {
+    //        string columnValues = System.Net.WebUtility.HtmlDecode(item.Text);
+    //        string important1 = Global.ImportantData;
 
-            if (important1 == "")
-            {
-                important1 = null;
-            }
-            index += 1;
+    //        if (important1 == "")
+    //        {
+    //            important1 = null;
+    //        }
+    //        index += 1;
 
-            if (item.Selected)
-            {
-                if (nyeretes < (CheckBoxList1.Items.Count - nyeretes))
-                {
-
-
-                    if (important1 != null)
-                    {
-                        Global.ImportantData = important1 + " or [" + BEoszlop + "]='" + columnValues + "'";
-
-                    }
-                    else
-                    {
-                        Global.ImportantData = "[" + BEoszlop + "]='" + columnValues + "'";
-
-                    }
+    //        if (item.Selected)
+    //        {
+    //            if (nyeretes < (CheckBoxList1.Items.Count - nyeretes))
+    //            {
 
 
+    //                if (important1 != null)
+    //                {
+    //                    Global.ImportantData = important1 + " or [" + BEoszlop + "]='" + columnValues + "'";
 
-                }
+    //                }
+    //                else
+    //                {
+    //                    Global.ImportantData = "[" + BEoszlop + "]='" + columnValues + "'";
+
+    //                }
 
 
 
-            }
-            else if(nyeretes > (CheckBoxList1.Items.Count - nyeretes))
-            {
-
-                if (important1 != null)
-                {
+    //            }
 
 
 
-                    Global.ImportantData = important1 + " and [" + BEoszlop + "]<>'" + columnValues + "'";
+    //        }
+    //        else if(nyeretes > (CheckBoxList1.Items.Count - nyeretes))
+    //        {
 
-                }
-                else
-                {
-
-
-                    Global.ImportantData = "[" + BEoszlop + "]<>'" + columnValues + "'";
+    //            if (important1 != null)
+    //            {
 
 
-                }
+
+    //                Global.ImportantData = important1 + " and [" + BEoszlop + "]<>'" + columnValues + "'";
+
+    //            }
+    //            else
+    //            {
 
 
-                list.Add(item.Text);
+    //                Global.ImportantData = "[" + BEoszlop + "]<>'" + columnValues + "'";
 
-            }
 
-        }
-        rp.FilterExpression = Global.ImportantData;
-        Global.ImportantData = rp.FilterExpression.ToString();
-        gr.DataBind();
-        szuro(gr);
-    }
-    protected void Button6_Click(object sender, EventArgs e)
-    {
-        GridView gr = (GridView)Page.Master.FindControl("GridView1");
-        SqlDataSource rp = (SqlDataSource)Page.Master.FindControl("SqlDataSource1");
-        string input = Global.ImportantData;
-        string output = Regex.Replace(input, @"(and..|\A.)" + BEoszlop + ".*(')", " ").ToString().Trim();
+    //            }
 
-        Global.ImportantData = output;
-        rp.FilterExpression = Global.ImportantData;
-        Global.ImportantData = rp.FilterExpression.ToString();
-        gr.DataBind();
-        szuro(gr);
-        Button5.Visible = true;
-    }
+
+    //            list.Add(item.Text);
+
+    //        }
+
+    //    }
+    //    rp.FilterExpression = Global.ImportantData;
+    //    Global.ImportantData = rp.FilterExpression.ToString();
+    //    gr.DataBind();
+    //    szuro(gr);
+    //}
+    //protected void Button6_Click(object sender, EventArgs e)
+    //{
+    //    GridView gr = (GridView)Page.Master.FindControl("GridView1");
+    //    SqlDataSource rp = (SqlDataSource)Page.Master.FindControl("SqlDataSource1");
+    //    string input = Global.ImportantData;
+    //    string output = Regex.Replace(input, @"(and..|\A.)" + BEoszlop + ".*(')", " ").ToString().Trim();
+
+    //    Global.ImportantData = output;
+    //    rp.FilterExpression = Global.ImportantData;
+    //    Global.ImportantData = rp.FilterExpression.ToString();
+    //    gr.DataBind();
+    //    szuro(gr);
+    //    Button5.Visible = true;
+    //}
 
 
 }

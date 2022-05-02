@@ -7,7 +7,7 @@
         <table style="font-family: 'Bosch Office Sans'; text-align: left">
             <tr>
                 <td>
-                    <asp:Button ID="Button6" runat="server" Text="Szürő törlése" OnClick="Button6_Click" />
+                    <asp:Button ID="Button6" runat="server" Text="Szürő törlése"  />
                 </td>
             </tr>
             <tr>
@@ -26,11 +26,11 @@
                     <div style="width: auto; height:200px; overflow: auto; text-align: left;">
                       <div runat="server" id="szovegszuro" visible="false">
                              <asp:Label ID="Label2" runat="server" Text="Egyenlő"></asp:Label>
-                            <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="True" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                            <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="True" ></asp:TextBox>
                             <br>
 
                                 <asp:Label ID="Label1" runat="server" Text="Tartalmazza"></asp:Label>
-                                <asp:TextBox ID="TextBox2" runat="server" AutoPostBack="True" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                                <asp:TextBox ID="TextBox2" runat="server" AutoPostBack="True" ></asp:TextBox>
                              <br>
                              <br>
                              <br></br>
@@ -53,7 +53,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button3" runat="server" Text="OK" OnClick="Button3_Click" />
+                    <asp:Button ID="Button3" runat="server" Text="OK"/>
                     <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="Cancel" />
 
 
